@@ -2,7 +2,7 @@
 
 This is a repository for testing a basic vector class. We added extra methods to the Vector2D class in order to make the CatsCradle class work properly.
 
-Additionally, I changed some parts of the CatsCradle class to make the program more visually interesting.
+Additionally, I changed some parts of the `CatsCradlePanel` class to make the program more visually interesting.
 The cat's cradle now has an odd number of sides, so that the edges do not converge in the center.
 
 The way that edges are processed was also changed. Edges now are split into many smaller lines through the `splitLineIntoSegments` method I added. Each of these smaller line segments can be individually colored. I used this functionality to make the lines brightest in the middle, and darkest around the nodes of the graph. The function that controls this brightness is the `mapColor` method in CatsCradlePanel.java.
