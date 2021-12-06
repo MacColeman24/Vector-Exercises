@@ -228,6 +228,7 @@ public class CatsCradlePanel extends JPanel implements ActionListener {
         //Comment or uncomment the following lines to invert the curve.
         dBrightness *= -1;
         dBrightness += 1;
+        dBrightness *= dBrightness * dBrightness;
         
         return new Color(Color.HSBtoRGB((float) hue/360, 1.0f, (float) dBrightness));
     }
